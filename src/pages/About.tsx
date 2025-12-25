@@ -46,7 +46,7 @@ const About = () => {
           <AnimatedSection>
             <SectionHeading
               title="About Seven Star Tex International"
-              subtitle="Your trusted partner for premium textile manufacturing and worldwide export since 2009."
+              subtitle="Your trusted partner for premium textile manufacturing and worldwide export."
             />
           </AnimatedSection>
         </div>
@@ -79,19 +79,19 @@ const About = () => {
                   Worldwide Textile Exporters Based in Pakistan
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Seven Star Tex International was founded with a vision to bring Pakistan's 
-                  rich textile heritage to the global market. Based in Faisalabad, the textile 
-                  hub of Pakistan, we have grown to become a leading manufacturer and exporter 
+                  Seven Star Tex International was founded with a vision to bring Pakistan's
+                  rich textile heritage to the global market. Based in Faisalabad, the textile
+                  hub of Pakistan, we have grown to become a leading manufacturer and exporter
                   of premium quality textiles.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our expertise spans across knitted apparel, woven garments, and home textiles. 
-                  We pride ourselves on delivering exceptional quality, competitive pricing, 
+                  Our expertise spans across knitted apparel, woven garments, and home textiles.
+                  We pride ourselves on delivering exceptional quality, competitive pricing,
                   and reliable service to clients across the globe.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With a dedicated team of textile professionals and state-of-the-art 
-                  manufacturing facilities, we are committed to exceeding our clients' 
+                  With a dedicated team of textile professionals and state-of-the-art
+                  manufacturing facilities, we are committed to exceeding our clients'
                   expectations in every aspect of our partnership.
                 </p>
               </div>
@@ -143,8 +143,8 @@ const About = () => {
                   Comprehensive Textile Services
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  From concept to delivery, we provide end-to-end textile solutions tailored 
-                  to your specific needs. Our experienced team ensures seamless execution 
+                  From concept to delivery, we provide end-to-end textile solutions tailored
+                  to your specific needs. Our experienced team ensures seamless execution
                   at every stage.
                 </p>
                 <ul className="space-y-3">
@@ -233,7 +233,7 @@ const About = () => {
                 Let's Build Something Great Together
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
-                Whether you need custom manufacturing, private label production, or bulk orders, 
+                Whether you need custom manufacturing, private label production, or bulk orders,
                 we're here to help bring your textile vision to life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

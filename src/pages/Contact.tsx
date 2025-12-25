@@ -45,8 +45,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: ["info@sevenstartex.com"],
-    href: "mailto:info@sevenstartex.com",
+    content: ["Info@sevenstartexinternational.com"],
+    href: "mailto:Info@sevenstartexinternational.com",
   },
   {
     icon: Clock,
@@ -71,17 +71,35 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message Sent Successfully!",
-      description: "Thank you for your inquiry. We'll get back to you within 24-48 hours.",
-    });
-    
-    reset();
-    setIsSubmitting(false);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/Info@sevenstartexinternational.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "Thank you for your inquiry. We'll get back to you within 24-48 hours.",
+        });
+        reset();
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      toast({
+        title: "Submission Error",
+        description: "There was a problem sending your message. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

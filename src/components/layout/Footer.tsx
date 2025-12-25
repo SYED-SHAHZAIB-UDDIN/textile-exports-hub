@@ -15,7 +15,7 @@ const Footer = () => {
               </p>
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
-              Crafting quality textiles for the world. Your trusted partner for premium knits, 
+              Crafting quality textiles for the world. Your trusted partner for premium knits,
               woven garments, and home textiles.
             </p>
           </div>
@@ -74,8 +74,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent flex-shrink-0" />
-                <a href="mailto:info@sevenstartex.com" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@sevenstartex.com
+                <a href="mailto:Info@sevenstartexinternational.com" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+                  Info@sevenstartexinternational.com
                 </a>
               </div>
             </div>
