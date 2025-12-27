@@ -79,8 +79,14 @@ const Contact = () => {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify({
+          ...data,
+          _captcha: "false",
+          _subject: "New Inquiry from Textile Exports Hub"
+        })
       });
+
+      const result = await response.json();
 
       if (response.ok) {
         toast({
@@ -89,9 +95,11 @@ const Contact = () => {
         });
         reset();
       } else {
-        throw new Error("Form submission failed");
+        console.error("FormSubmit Error:", result);
+        throw new Error(result.message || "Form submission failed");
       }
     } catch (error) {
+      console.error("Submission Error:", error);
       toast({
         title: "Submission Error",
         description: "There was a problem sending your message. Please try again or contact us directly.",
