@@ -73,7 +73,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/Info@sevenstartexinternational.com", {
+      const response = await fetch("https://formsubmit.co/ajax/info@sevenstartexinternational.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
